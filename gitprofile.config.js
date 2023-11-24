@@ -29,7 +29,7 @@ const config = {
     'Node.js',
     'MySQL',    
     'Git',
-    'MsSQL',
+    'MSSQL',
     'C#',
     '.Net',
     'Jquery',
