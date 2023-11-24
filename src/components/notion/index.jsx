@@ -9,7 +9,7 @@ const ReactNotion = () => {
   const [response, setResponse] = useState({});
   useEffect(() => {
     const NOTION_PAGE_ID =
-      'Development-Records-2020-present-1-2d59c0e0e9644b1ab1d374baa9f6872f';
+      'Development-Records-2020-present-2d59c0e0e9644b1ab1d374baa9f6872f';
     axios
       .get(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then(({ data }) => {
@@ -18,7 +18,7 @@ const ReactNotion = () => {
   }, []);
 
   const notionCard = {
-    maxHeight: '341px',
+    maxHeight: '25em',
     overflow: 'auto',
   };
 

@@ -23,32 +23,33 @@ const config = {
     phone: '',
     email: 'newri0807@gmail.com',
   },
-  skills: [
+  skills: [    
+    'JavaScript',
+    'React',
+    'Node.js',
+    'MySQL',    
+    'Git',
+    'MsSQL',
     'C#',
     '.Net',
     'Jquery',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'MsSQL',
-    'Git',
     'CSS',
     'Tailwind',
     'Bootstrap',
   ],
   experiences: [
     {
-      company: 'Blue Eye Co., Ltd',
+      company: 'Caitory Co., Ltd',
       position: 'FrontEnd Web Developer',
-      from: 'June 2020',
-      to: 'September 2022',
+      from: 'March 2023',
+      to: 'Present',
     },
-    // {
-    //   company: 'My Offer 360 Degree',
-    //   position: 'Web Application Developer',
-    //   from: 'July 2019',
-    //   to: 'August 2021',
-    // },
+    {
+      company: 'Blue Eye Co., Ltd',
+      position: 'Web Application Developer',
+      from: 'June 2021',
+      to: 'November 2022',
+    },  
   ],
   education: [
     {

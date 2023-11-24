@@ -94,3 +94,20 @@ svg {
     opacity: 1;
   }
 }
+
+
+/* Notion import custom */
+.notion-page-header,.notion-page-cover{
+    display: none;
+}
+
+.notion-page-icon-offset.notion-emoji.notion-page-icon-cover,.notion-title{   
+  display: inline-flex;
+}
+.notion-title{
+  padding-left: 1em;
+}
+
+.notion-page.notion-full-width > .notion-blank{
+  display: none;
+}
