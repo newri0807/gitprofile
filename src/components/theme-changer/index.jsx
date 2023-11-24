@@ -11,6 +11,23 @@ const ThemeChanger = ({ theme, setTheme, loading, themeConfig }) => {
       localStorage.setItem('gitprofile-theme', selectedTheme);
 
     setTheme(selectedTheme);
+
+
+    // ADD Notion txt color change related to changing Theme Color
+    // localstage에서 gitprofile-theme 값을 읽어옵니다.
+    const gitProfileTheme = localStorage.getItem('gitprofile-theme');
+
+    // gitprofile-theme 값에 따라 조건을 설정합니다.
+    const element = document.querySelector('.notion-page.notion-full-width');
+    if (element) {
+      if (gitProfileTheme === 'synthwave' || gitProfileTheme === 'halloween' || gitProfileTheme === 'dracula' || gitProfileTheme === 'business' || gitProfileTheme === 'night' || gitProfileTheme === 'dark') {
+        // className이 .notion-page.notion-full-width인 요소의 color를 변경합니다.
+        element.style.color = '#fff';
+      }else{
+        element.style.color = `inherit`;
+      }
+    }
+
   };
 
   return (

@@ -18,26 +18,56 @@ const ReactNotion = () => {
   }, []);
 
   const notionCard = {
-    maxHeight: '25em',
+    maxHeight: '26em',
     overflow: 'auto',
   };
 
   return (
     Object.keys(response).length && (
-      <>
-        <div
-          className="col-span-1 lg:col-span-2 card shadow-lg compact bg-base-100 "
-          style={notionCard}
-        >
-          <div className="flex justify-between flex-col p-8 h-full w-full">
-            <div>
-              <div className="notion_w100">
-                <NotionRenderer blockMap={response} fullPage={true} />
+      // <>
+    //   <div
+    //   className="col-span-1 lg:col-span-2 card shadow-lg compact bg-base-100 "
+    //   style={notionCard}
+    // >
+    //   <div className="flex justify-between flex-col p-8 h-full w-full">
+    //     <div>
+    //       <div className="notion_w100">
+    //         <NotionRenderer blockMap={response} fullPage={true} />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+      // </>
+
+      <div className="card shadow-lg compact bg-base-100">
+        <div className="card-body">
+          {/*<div className="mx-3">
+              <h5 className="card-title">
+                {loading ? (
+                  skeleton({ width: 'w-32', height: 'h-8' })
+                ) : (
+                  <span className="text-base-content opacity-70">
+                    Education
+                  </span>
+                )}
+              </h5> 
+            </div>*/}
+          <div className="text-base-content text-opacity-60">
+            <div
+              className="col-span-1 lg:col-span-2 card shadow-lg compact bg-base-100 "
+              style={notionCard}
+            >
+              <div className="flex justify-between flex-col p-8 h-full w-full">
+                <div>
+                  <div className="notion_w100">
+                    <NotionRenderer blockMap={response} fullPage={true} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </>
+      </div>
     )
   );
 };

@@ -103,6 +103,7 @@ svg {
 
 .notion-page-icon-offset.notion-emoji.notion-page-icon-cover,.notion-title{   
   display: inline-flex;
+  min-width: 5%;
 }
 .notion-title{
   padding-left: 1em;
@@ -110,4 +111,13 @@ svg {
 
 .notion-page.notion-full-width > .notion-blank{
   display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .notion-title {
+    padding-left: 0;    
+  }
+  span.notion-page-icon-offset {
+    margin-top: 0;
+  }
 }
