@@ -2,7 +2,7 @@ repo_name: newri0807/gitprofile
 report_id: bfae9338337c1f09d3ce1f83a2585e2c
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:01:40+00:00'
+timestamp: '2024-02-29T18:28:01+00:00'
 requested_by: newri0807
 provider: github
 branch: main
@@ -158,7 +158,7 @@ tools:
   last_updated_by: newli
   last_updated_on: 2022-09-07 11:23:53.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.7.1
   license: MIT
@@ -395,6 +395,13 @@ tools:
   last_updated_by: newli
   last_updated_on: 2022-09-07 11:23:53.000000000 Z
   vulnerabilities:
+  - name: Vite dev server option `server.fs.deny` can be bypassed when hosted on case-insensitive
+      filesystem
+    cve_id: CVE-2024-23331
+    cve_url: https://github.com/advisories/GHSA-c24v-8rfc-w8vw
+    detected_date: Jan 20
+    severity: high
+    first_patched: 3.2.8
   - name: Vite Server Options (server.fs.deny) can be bypassed using double forward-slash
       (//)
     cve_id: CVE-2023-34092
